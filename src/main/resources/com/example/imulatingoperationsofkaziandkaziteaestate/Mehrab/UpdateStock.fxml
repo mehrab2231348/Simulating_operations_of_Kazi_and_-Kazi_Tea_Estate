@@ -19,7 +19,7 @@
 
     <Button layoutX="104.0" layoutY="159.0" onAction="#updateOnClicked" text="Update Stock" />
 
-    <TableView fx:id="stockTableView" layoutX="272.0" layoutY="72.0" prefHeight="200" prefWidth="239.0">
+    <TableView fx:id="stockTableView" layoutX="274.0" layoutY="41.0" prefHeight="217.0" prefWidth="239.0">
         <columns>
             <TableColumn fx:id="idColumn" text="Product ID" />
             <TableColumn fx:id="nameColumn" text="Product Name" />
