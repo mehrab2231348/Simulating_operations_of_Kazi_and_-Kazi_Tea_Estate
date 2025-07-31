@@ -6,24 +6,30 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mehrab.AddNewProductController">
+<AnchorPane prefHeight="364.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mehrab.AddNewProductController">
 <children>
-    <Label layoutX="30" layoutY="20" text="Product Name:" />
-    <TextField fx:id="productNameField" layoutX="140" layoutY="15" />
+    <Label layoutX="41.0" layoutY="69.0" text="Product Name:" />
+    <TextField fx:id="productNameTextField" layoutX="151.0" layoutY="64.0" />
 
-    <Label layoutX="30" layoutY="60" text="Category:" />
-    <ComboBox fx:id="categoryComboBox" layoutX="140" layoutY="55" />
+    <Label layoutX="41.0" layoutY="109.0" text="Category:" />
+    <ComboBox fx:id="categoryComboBox" layoutX="151.0" layoutY="104.0" prefHeight="25.0" prefWidth="149.0" />
 
-    <Label layoutX="30" layoutY="100" text="Batch No:" />
-    <TextField fx:id="batchField" layoutX="140" layoutY="95" />
+    <Label layoutX="41.0" layoutY="149.0" text="Batch No:" />
+    <TextField fx:id="batchTextField" layoutX="151.0" layoutY="144.0" />
 
-    <Label layoutX="30" layoutY="140" text="Unit Price:" />
-    <TextField fx:id="priceField" layoutX="140" layoutY="135" />
+    <Label layoutX="41.0" layoutY="189.0" text="Unit Price:" />
+    <TextField fx:id="priceTextField" layoutX="151.0" layoutY="184.0" />
 
-    <Label layoutX="30" layoutY="180" text="Description:" />
-    <TextArea fx:id="descriptionArea" layoutX="140" layoutY="175" prefHeight="80" prefWidth="250" />
+    <Label layoutX="41.0" layoutY="229.0" text="Description:" />
+    <TextArea fx:id="descriptionTextArea" layoutX="151.0" layoutY="224.0" prefHeight="80" prefWidth="250" />
 
-    <Button fx:id="addProductButton" layoutX="140" layoutY="270" text="Add Product" />
+    <Button layoutX="151.0" layoutY="319.0" onAction="#addProductOnClicked" prefHeight="25.0" prefWidth="201.0" text="Add Product" />
+      <Label layoutX="116.0" layoutY="14.0" text="Add New Product">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
 </children>
 </AnchorPane>
