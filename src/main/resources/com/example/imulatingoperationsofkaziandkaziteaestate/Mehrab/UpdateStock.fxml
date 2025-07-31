@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="300.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mehrab.UpdateStockController">
+<children>
+    <Label layoutX="30" layoutY="20" text="Product ID:" />
+    <TextField fx:id="productIdField" layoutX="120" layoutY="15" />
+
+    <Label layoutX="30" layoutY="60" text="New Quantity:" />
+    <TextField fx:id="newQtyField" layoutX="120" layoutY="55" />
+
+    <Button fx:id="updateButton" layoutX="120" layoutY="100" text="Update Stock" />
+
+    <TableView fx:id="stockTable" layoutX="300" layoutY="15" prefHeight="200" prefWidth="239.0">
+        <columns>
+            <TableColumn fx:id="idColumn" text="Product ID" />
+            <TableColumn fx:id="nameColumn" text="Product Name" />
+            <TableColumn fx:id="quantityColumn" text="Quantity" />
+        </columns>
+    </TableView>
+      <Line endX="117.0" endY="-208.0" layoutX="169.0" layoutY="216.0" startX="117.0" startY="46.0" />
+</children>
+</AnchorPane>
