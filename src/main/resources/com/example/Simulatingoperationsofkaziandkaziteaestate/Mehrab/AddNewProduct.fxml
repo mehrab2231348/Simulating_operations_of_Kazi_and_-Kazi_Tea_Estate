@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="364.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.AddNewProductController">
+    <children>
+        <Label layoutX="41.0" layoutY="69.0" text="Product Name:" />
+        <TextField fx:id="productNameTextField" layoutX="151.0" layoutY="64.0" />
+
+        <Label layoutX="41.0" layoutY="109.0" text="Category:" />
+        <ComboBox fx:id="categoryComboBox" layoutX="151.0" layoutY="104.0" prefHeight="25.0" prefWidth="149.0" />
+
+        <Label layoutX="41.0" layoutY="149.0" text="Batch No:" />
+        <TextField fx:id="batchTextField" layoutX="151.0" layoutY="144.0" />
+
+        <Label layoutX="41.0" layoutY="189.0" text="Unit Price:" />
+        <TextField fx:id="priceTextField" layoutX="151.0" layoutY="184.0" />
+
+        <Label layoutX="41.0" layoutY="229.0" text="Description:" />
+        <TextArea fx:id="descriptionTextArea" layoutX="151.0" layoutY="224.0" prefHeight="80" prefWidth="201.0" />
+
+        <Button layoutX="151.0" layoutY="319.0" onAction="#addProductOnClicked" prefHeight="25.0" prefWidth="201.0" text="Add Product" />
+         <Label layoutX="116.0" layoutY="14.0" text="Add New Product">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+         </Label>
+        <TableView fx:id="ProductTableView" layoutX="365.0" layoutY="89.0" prefHeight="236.0" prefWidth="257.0">
+            <columns>
+                <TableColumn fx:id="productNameColumn" prefWidth="97.0" text="ProductName" />
+                <TableColumn fx:id="priceColumn" prefWidth="66.0" text="Price" />
+                <TableColumn fx:id="batchNoColumn" prefWidth="93.0" text="Batch No" />
+            </columns>
+        </TableView>
+      <Line endX="126.0" layoutX="205.0" layoutY="41.0" startX="-100.0" />
+    </children>
+</AnchorPane>

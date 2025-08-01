@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.CancelVoidInvoiceController">
+    <children>
+        <Label layoutX="27.0" layoutY="49.0" text="Invoice ID:" />
+        <TextField fx:id="invoiceIdTextField" layoutX="107.0" layoutY="44.0" />
+
+        <Label layoutX="27.0" layoutY="89.0" text="Reason for Cancellation:" />
+        <TextArea fx:id="reasonTextField" layoutX="177.0" layoutY="84.0" prefHeight="80" prefWidth="216.0" />
+
+        <Button layoutX="285.0" layoutY="376.0" onAction="#cancelOnClicked" prefHeight="37.0" prefWidth="97.0" text="Cancel Invoice" />
+
+        <TableView fx:id="logTableView" layoutX="26.0" layoutY="180.0" prefHeight="180" prefWidth="377.0">
+            <columns>
+                <TableColumn fx:id="invoiceColumn" text="Invoice ID" />
+                <TableColumn fx:id="statusColumn" text="Status" />
+                <TableColumn fx:id="reasonColumn" prefWidth="108.0" text="Reason" />
+                <TableColumn fx:id="dateColumn" prefWidth="108.0" text="Date" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="136.0" layoutY="14.0" text="Cancel Invoice">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <Line endX="89.0" layoutX="182.0" layoutY="35.0" startX="-52.0" />
+      <Label layoutX="41.0" layoutY="376.0" prefHeight="37.0" prefWidth="185.0" text="Error" />
+    </children>
+</AnchorPane>

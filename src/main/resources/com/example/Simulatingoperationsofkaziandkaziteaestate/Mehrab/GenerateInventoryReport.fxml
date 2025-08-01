@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="456.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.GenerateInventoryReportController">
+    <children>
+        <Label layoutX="28.0" layoutY="71.0" text="Category:" />
+        <ComboBox fx:id="categoryComboBox" layoutX="98.0" layoutY="66.0" prefWidth="200" />
+
+        <Label layoutX="318.0" layoutY="71.0" text="Location:" />
+        <ComboBox fx:id="locationComboBox" layoutX="388.0" layoutY="66.0" prefWidth="200" />
+
+        <Label layoutX="28.0" layoutY="111.0" text="Date Range:" />
+        <DatePicker fx:id="startDatePicker" layoutX="98.0" layoutY="106.0" />
+        <Label layoutX="286.0" layoutY="111.0" text="to" />
+        <DatePicker fx:id="endDatePicker" layoutX="308.0" layoutY="106.0" />
+
+        <Button layoutX="498.0" layoutY="106.0" onAction="#generateReportOnClicked" text="Generate Report" />
+
+        <TableView fx:id="reportTableView" layoutX="117.0" layoutY="151.0" prefHeight="280" prefWidth="402.0">
+           <columns>
+                <TableColumn fx:id="productColumn" text="Product" />
+                <TableColumn fx:id="categoryColumn" text="Category" />
+                <TableColumn fx:id="locationColumn" text="Location" />
+                <TableColumn fx:id="quantityColumn" text="Quantity" />
+                <TableColumn fx:id="dateColumn" text="Date" />
+            </columns>
+        </TableView>
+          <Label layoutX="195.0" layoutY="24.0" text="Generate Inventory Report">
+             <font>
+                <Font name="Arial Bold" size="19.0" />
+             </font>
+          </Label>
+          <Line endX="169.0" layoutX="272.0" layoutY="47.0" startX="-84.0" />
+    </children>
+</AnchorPane>

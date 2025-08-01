@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.UpdateInvoiceQuantityController">
+    <children>
+        <Label layoutX="24.0" layoutY="82.0" text="Invoice ID:" />
+        <TextField fx:id="invoiceIdTextField" layoutX="104.0" layoutY="77.0" />
+
+        <Button layoutX="79.0" layoutY="123.0" onAction="#searchOnClicked" prefHeight="25.0" prefWidth="113.0" text="Search" />
+
+        <TableView fx:id="invoiceTable" layoutX="322.0" layoutY="83.0" prefHeight="250" prefWidth="418.0">
+            <columns>
+                <TableColumn fx:id="productIdColumn" text="Product ID" />
+                <TableColumn fx:id="productNameColumn" prefWidth="103.0" text="Product Name" />
+                <TableColumn fx:id="currentQtyColumn" prefWidth="102.0" text="Current Quantity" />
+                <TableColumn fx:id="updateQtyColumn" prefWidth="147.0" text="Updated Quantity" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="627.0" layoutY="353.0" onAction="#updateOnclicked" text="Update Quantities" />
+
+        <Label layoutX="45.0" layoutY="237.0" text="Product Name:" />
+        <TextField fx:id="productNameTextField" layoutX="155.0" layoutY="231.0" />
+
+        <Label layoutX="45.0" layoutY="273.0" text="Current Quantity:" />
+        <TextField fx:id="currentQuantityTextField" layoutX="155.0" layoutY="267.0" />
+
+        <Label layoutX="45.0" layoutY="314.0" text="Updated Quantity:" />
+        <TextField fx:id="updatedQuantityTextField" layoutX="155.0" layoutY="308.0" />
+
+        <Label layoutX="61.0" layoutY="30.0" text="Update Invoice">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="137.0" layoutY="183.0" text="Edit">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+
+        <Line endX="-41.0" endY="359.0" layoutX="354.0" layoutY="41.0" startX="-41.0" startY="11.0" />
+      <Label layoutX="343.0" layoutY="351.0" prefHeight="30.0" prefWidth="241.0" text="Invalid Invoice ID or Quantity" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="277.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ApplyDiscountsPromotionsController">
+    <children>
+        <Label layoutX="15.0" layoutY="75.0" text="Product ID:" />
+        <TextField fx:id="productIdTextField" layoutX="127.0" layoutY="71.0" prefWidth="150" />
+
+        <Label layoutX="15.0" layoutY="115.0" text="Discount (%):" />
+        <TextField fx:id="discountTextField" layoutX="127.0" layoutY="111.0" prefWidth="150" />
+
+        <Label layoutX="15.0" layoutY="155.0" prefHeight="17.0" prefWidth="97.0" text="Campaign Name:" />
+        <TextField fx:id="campaignTextField" layoutX="127.0" layoutY="151.0" prefHeight="25.0" prefWidth="150.0" />
+
+        <Button layoutX="74.0" layoutY="195.0" onAction="#applyDiscountOnClicked" prefHeight="47.0" prefWidth="150.0" text="Apply Discount" />
+
+        <TableView fx:id="discountTableView" layoutX="303.0" layoutY="41.0" prefHeight="228.0" prefWidth="240.0">
+            <columns>
+                <TableColumn fx:id="productColumn" text="Product ID" />
+                <TableColumn fx:id="discountColumn" text="Discount" />
+                <TableColumn fx:id="campaignColumn" text="Campaign" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="155.0" layoutY="14.0" text="Apply Discounts Promotions">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

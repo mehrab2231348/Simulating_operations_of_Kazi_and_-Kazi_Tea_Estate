@@ -9,15 +9,15 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="283.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mehrab.UpdateStockController">
-<children>
-    <Label layoutX="14.0" layoutY="79.0" text="Product ID:" />
-    <TextField fx:id="productIdTextField" layoutX="104.0" layoutY="74.0" />
+<AnchorPane prefHeight="283.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.UpdateStockController">
+    <children>
+        <Label layoutX="14.0" layoutY="79.0" text="Product ID:" />
+        <TextField fx:id="productIdTextField" layoutX="104.0" layoutY="74.0" />
 
-    <Label layoutX="14.0" layoutY="119.0" text="New Quantity:" />
-    <TextField fx:id="newQtyTextField" layoutX="104.0" layoutY="114.0" />
+        <Label layoutX="14.0" layoutY="119.0" text="New Quantity:" />
+        <TextField fx:id="newQtyTextField" layoutX="104.0" layoutY="114.0" />
 
-    <Button layoutX="104.0" layoutY="159.0" onAction="#updateOnClicked" text="Update Stock" />
+        <Button layoutX="104.0" layoutY="159.0" onAction="#updateOnClicked" text="Update Stock" />
 
     <TableView fx:id="stockTableView" layoutX="274.0" layoutY="41.0" prefHeight="217.0" prefWidth="239.0">
         <columns>
@@ -33,5 +33,5 @@
          </font>
       </Label>
       <Line endX="52.0" layoutX="115.0" layoutY="41.0" startX="-90.0" />
-</children>
+    </children>
 </AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.GenerateInventoryReportController">
+    <children>
+        <Label layoutX="30.0" layoutY="65.0" text="Threshold:" />
+        <TextField fx:id="thresholdTextField" layoutX="92.0" layoutY="61.0" />
+
+        <Button layoutX="109.0" layoutY="96.0" onAction="#setAlertOnClicked" prefHeight="25.0" prefWidth="102.0" text="Set Alert" />
+
+        <TableView fx:id="alertTable" layoutX="30.0" layoutY="135.0" prefHeight="180" prefWidth="259.0">
+            <columns>
+                <TableColumn fx:id="productColumn" text="Product" />
+                <TableColumn fx:id="currentQtyColumn" prefWidth="106.0" text="Current Quantity" />
+                <TableColumn fx:id="thresholdColumn" prefWidth="72.0" text="Threshold" />
+            </columns>
+        </TableView>
+          <Label layoutX="91.0" layoutY="24.0" text="Low Stock Alert">
+             <font>
+                <Font name="Arial Bold" size="18.0" />
+             </font>
+          </Label>
+          <Line endX="193.0" layoutX="140.0" layoutY="45.0" startX="-140.0" />
+    </children>
+</AnchorPane>
