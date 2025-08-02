@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="441.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mahin.MonitorDailyEstateActivitiesController">
+    <children>
+        <Label layoutX="170.0" prefHeight="27.0" prefWidth="304.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Daily Estate Operations Monitoring" />
+
+        <Label layoutX="24.0" layoutY="86.0" text="Select Date:" />
+        <DatePicker fx:id="datePicker" layoutX="112.0" layoutY="82.0" />
+
+        <Label layoutX="23.0" layoutY="45.0" text="Select Zone:" />
+        <ComboBox fx:id="zoneSelector" layoutX="112.0" layoutY="41.0" prefWidth="150" />
+
+        <Label layoutX="322.0" layoutY="45.0" text="Total Plucked (kg):" />
+        <TextField fx:id="pluckingField" layoutX="438.0" layoutY="41.0" />
+
+        <Label layoutX="19.0" layoutY="171.0" text="Rainfall (mm):" />
+        <TextField fx:id="rainfallField" layoutX="112.0" layoutY="167.0" />
+
+        <Label layoutX="12.0" layoutY="129.0" text="Absent Workers:" />
+        <TextField fx:id="absentField" layoutX="112.0" layoutY="125.0" />
+
+        <Label layoutX="322.0" layoutY="95.0" text="Details:" />
+        <TextArea fx:id="remarksArea" layoutX="371.0" layoutY="86.0" prefHeight="67.0" prefWidth="210.0" promptText="Comments" />
+
+        <Button fx:id="saveBtn" layoutX="502.0" layoutY="167.0" text="Save Entry" />
+        <Button fx:id="ViewUpdateBtn" layoutX="314.0" layoutY="167.0" text="View Update" />
+      <TableView fx:id="MonitoringTable" layoutX="24.0" layoutY="216.0" prefHeight="214.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="ZoneColumn" prefWidth="75.0" text="Zone" />
+          <TableColumn fx:id="AbsentList" prefWidth="108.0" text="Absent" />
+            <TableColumn fx:id="PluckedList" prefWidth="96.80000305175781" text="Plucked" />
+            <TableColumn fx:id="DateColumn" prefWidth="95.20001220703125" text="Date" />
+            <TableColumn fx:id="RainfallColumn" prefWidth="75.0" text="Rainfall" />
+            <TableColumn fx:id="DetailsMonitoringColumn" prefWidth="122.4000122070313" text="Details" />
+        </columns>
+      </TableView>
+      <Line fx:id="DailyEstateLine" endX="-106.99998474121094" endY="303.9999694824219" layoutX="107.0" layoutY="-100.0" startX="509.0" startY="303.9999694824219" />
+    </children>
+</AnchorPane>

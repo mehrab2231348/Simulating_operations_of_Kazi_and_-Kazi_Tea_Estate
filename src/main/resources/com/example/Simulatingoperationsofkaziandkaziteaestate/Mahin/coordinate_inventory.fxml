@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="278.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mahin.CoordinateInventoryController">
+    <children>
+        <Label layoutX="177.0" layoutY="14.0" style="-fx-font-size:18px; -fx-font-weight:bold;" text="Inventory Coordination" />
+
+        <TableView fx:id="inventoryTable" layoutX="20.0" layoutY="47.0" prefHeight="130.0" prefWidth="516.0">
+            <columns>
+                <TableColumn fx:id="prodIdCol" prefWidth="84.00000381469727" text="Product ID" />
+                <TableColumn fx:id="nameCol" prefWidth="143.2000732421875" text="Product Name" />
+                <TableColumn fx:id="stockCol" prefWidth="107.19993591308594" text="Available Stock" />
+                <TableColumn fx:id="lastUpdateCol" prefWidth="83.20001220703125" text="Last Sync" />
+            <TableColumn fx:id="StatusInventoryCoordinatorTable" prefWidth="95.9999877929688" text="Status" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="syncBtn" layoutX="366.0" layoutY="239.0" text="Update &amp; Sync" />
+      <Label layoutX="23.0" layoutY="203.0" text="Product Name:" />
+      <Label layoutX="23.0" layoutY="243.0" text="Status" />
+      <TextField fx:id="ItemName" layoutX="109.0" layoutY="199.0" />
+      <ComboBox fx:id="StatusCheckBox" layoutX="108.0" layoutY="239.0" prefWidth="150.0" />
+      <TextField fx:id="PoductIDCheckBox" layoutX="344.0" layoutY="199.0" />
+      <Label layoutX="278.0" layoutY="203.0" text="Product ID:" />
+    </children>
+</AnchorPane>

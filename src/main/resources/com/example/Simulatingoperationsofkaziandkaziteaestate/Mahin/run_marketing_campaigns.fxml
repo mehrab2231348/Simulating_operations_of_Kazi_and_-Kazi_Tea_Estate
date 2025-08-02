@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="280.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mahin.RunMarketingCampaignsController">
+        <children>
+        <Label layoutX="138.0" layoutY="14.0" style="-fx-font-size:18px; -fx-font-weight:bold;" text="Marketing Campaigns Promotions" />
+
+        <Label layoutX="20" layoutY="60" text="Campaign Name:" />
+        <TextField fx:id="campaignNameField" layoutX="119.0" layoutY="56.0" prefHeight="26.0" prefWidth="175.0" />
+
+        <Label layoutX="20" layoutY="100" text="Start Date:" />
+        <DatePicker fx:id="startDatePicker" layoutX="119.0" layoutY="96.0" />
+        <Label layoutX="318.0" layoutY="100.0" text="End Date:" />
+        <DatePicker fx:id="endDatePicker" layoutX="379.0" layoutY="95.0" prefHeight="26.0" prefWidth="151.0" />
+
+        <Label layoutX="318.0" layoutY="60.0" text="Media:" />
+        <ComboBox fx:id="channelCombo" layoutX="379.0" layoutY="56.0" prefHeight="26.0" prefWidth="151.0" promptText="Select Channnel" />
+        <Label layoutX="20.0" layoutY="144.0" text="Content / Details:" />
+        <TextArea fx:id="contentArea" layoutX="119.0" layoutY="136.0" prefHeight="88.0" prefWidth="414.0" promptText="Exprerss it here, so the show will show it's blust..." />
+
+        <Button fx:id="launchBtn" cache="true" layoutX="227.0" layoutY="240.0" text="Launch Campaign" />
+    </children>
+</AnchorPane>
