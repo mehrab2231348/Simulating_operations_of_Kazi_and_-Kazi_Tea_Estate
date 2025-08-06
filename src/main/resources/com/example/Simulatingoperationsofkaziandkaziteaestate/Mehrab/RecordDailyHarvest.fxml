@@ -22,7 +22,7 @@
         <Label layoutX="22.0" layoutY="147.0" text="Quantity:" />
         <TextField fx:id="quantityTextField" layoutX="92.0" layoutY="142.0" />
 
-        <Button layoutX="92.0" layoutY="187.0" onAction="#recordOnClicked" prefHeight="42.0" prefWidth="142.0" text="Record Harvest" />
+        <Button layoutX="92.0" layoutY="187.0" onAction="#recordButtonOnClicked" prefHeight="42.0" prefWidth="142.0" text="Record Harvest" />
 
         <TableView fx:id="harvestTableView" layoutX="322.0" layoutY="62.0" prefHeight="200" prefWidth="243.0">
             <columns>

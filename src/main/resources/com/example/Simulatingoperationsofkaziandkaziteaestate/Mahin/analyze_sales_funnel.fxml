@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="303.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mahin.AnalyzeSalesFunnelController">
+<AnchorPane prefHeight="303.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.AnalyzeSalesFunnelController">
     <children>
         <Label layoutX="194.0" layoutY="14.0" style="-fx-font-size:18px; -fx-font-weight:bold;" text="Sales Funnel Conversion Analysis" />
 

@@ -18,7 +18,7 @@
         <Label layoutX="27.0" layoutY="89.0" text="Reason for Cancellation:" />
         <TextArea fx:id="reasonTextField" layoutX="177.0" layoutY="84.0" prefHeight="80" prefWidth="216.0" />
 
-        <Button layoutX="285.0" layoutY="376.0" onAction="#cancelOnClicked" prefHeight="37.0" prefWidth="97.0" text="Cancel Invoice" />
+        <Button layoutX="285.0" layoutY="376.0" onAction="#cancelButtonOnClicked" prefHeight="37.0" prefWidth="97.0" text="Cancel Invoice" />
 
         <TableView fx:id="logTableView" layoutX="26.0" layoutY="180.0" prefHeight="180" prefWidth="377.0">
             <columns>

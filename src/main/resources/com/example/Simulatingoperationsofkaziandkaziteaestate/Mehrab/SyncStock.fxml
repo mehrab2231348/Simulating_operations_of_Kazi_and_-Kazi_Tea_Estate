@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="300.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.SyncStockController">
     <children>
-        <Button layoutX="15.0" layoutY="109.0" onAction="#syncNowOnClicked" text="Sync Now with E-Commerce" />
+        <Button layoutX="15.0" layoutY="109.0" onAction="#syncNowButtonOnClicked" text="Sync Now with E-Commerce" />
 
         <Label fx:id="syncStatusLabel" layoutX="39.0" layoutY="145.0" text="Status: Not Synced" />
 

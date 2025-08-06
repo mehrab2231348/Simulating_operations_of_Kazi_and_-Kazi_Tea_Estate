@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane prefHeight="394.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mahin.SubmitDailyHarvestReportController">
+<AnchorPane prefHeight="394.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.SubmitDailyHarvestReportController">
     <children>
         <Label fx:id="DailyLable" layoutX="185.0" layoutY="14.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Daily Harvest Report" />
 

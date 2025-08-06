@@ -20,7 +20,7 @@
         <Label layoutX="42.0" layoutY="170.0" text="Quantity:" />
         <TextField fx:id="adjustQuantityTextField" layoutX="142.0" layoutY="165.0" />
 
-        <Button layoutX="142.0" layoutY="210.0" onAction="#applyAdjustmentOnClicked" text="Apply Adjustment" />
+        <Button layoutX="142.0" layoutY="210.0" onAction="#applyAdjustmentButtonOnClicked" text="Apply Adjustment" />
 
         <Label layoutX="101.0" layoutY="34.0" text="Adjust Inventory">
             <font>
@@ -37,4 +37,3 @@
         </TableView>
     </children>
 </AnchorPane>
-

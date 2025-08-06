@@ -23,7 +23,7 @@
         <Label layoutX="286.0" layoutY="111.0" text="to" />
         <DatePicker fx:id="endDatePicker" layoutX="308.0" layoutY="106.0" />
 
-        <Button layoutX="498.0" layoutY="106.0" onAction="#generateReportOnClicked" text="Generate Report" />
+        <Button layoutX="498.0" layoutY="106.0" onAction="#generateButtonReportOnClicked" text="Generate Report" />
 
         <TableView fx:id="reportTableView" layoutX="117.0" layoutY="151.0" prefHeight="280" prefWidth="402.0">
            <columns>

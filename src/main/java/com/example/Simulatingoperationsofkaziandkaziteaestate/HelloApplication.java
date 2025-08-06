@@ -1,4 +1,4 @@
-package com.example.imulatingoperationsofkaziandkaziteaestate;
+package com.example.Simulatingoperationsofkaziandkaziteaestate;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

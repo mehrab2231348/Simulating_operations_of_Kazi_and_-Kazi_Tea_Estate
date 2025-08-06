@@ -28,7 +28,7 @@
         <Label layoutX="41.0" layoutY="229.0" text="Description:" />
         <TextArea fx:id="descriptionTextArea" layoutX="151.0" layoutY="224.0" prefHeight="80" prefWidth="201.0" />
 
-        <Button layoutX="151.0" layoutY="319.0" onAction="#addProductOnClicked" prefHeight="25.0" prefWidth="201.0" text="Add Product" />
+        <Button layoutX="151.0" layoutY="319.0" onAction="#addProductButtonOnClicked" prefHeight="25.0" prefWidth="201.0" text="Add Product" />
          <Label layoutX="116.0" layoutY="14.0" text="Add New Product">
             <font>
                 <Font name="Arial Bold" size="24.0" />

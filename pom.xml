@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.imulatingoperationsofkaziandkaziteaestate/com.example.imulatingoperationsofkaziandkaziteaestate.HelloApplication
+                                com.example.imulatingoperationsofkaziandkaziteaestate/com.example.Simulatingoperationsofkaziandkaziteaestate.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

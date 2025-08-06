@@ -13,7 +13,7 @@
         <Label layoutX="26.0" layoutY="65.0" text="Customer ID:" />
         <TextField fx:id="customerIdTextField" layoutX="116.0" layoutY="60.0" />
 
-        <Button layoutX="276.0" layoutY="60.0" onAction="#searchOnClicked" text="Search History" />
+        <Button layoutX="276.0" layoutY="60.0" onAction="#searchButtonOnClicked" text="Search History" />
 
         <TableView fx:id="historyTable" layoutX="37.0" layoutY="126.0" prefHeight="300" prefWidth="321.0">
             <columns>

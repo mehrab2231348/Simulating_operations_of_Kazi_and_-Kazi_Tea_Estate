@@ -18,7 +18,7 @@
         <CheckBox fx:id="expiredCheckbox" layoutX="27.0" layoutY="121.0" text="Expired Only" />
         <CheckBox fx:id="discontinuedCheckbox" layoutX="136.0" layoutY="121.0" text="Discontinued Only" />
 
-        <Button layoutX="77.0" layoutY="174.0" onAction="#archiveSelectedOnClicked" prefHeight="62.0" prefWidth="104.0" text="Archive Selected" />
+        <Button layoutX="77.0" layoutY="174.0" onAction="#archiveSelectedButtonOnClicked" prefHeight="62.0" prefWidth="104.0" text="Archive Selected" />
 
         <TableView fx:id="productTableView" layoutX="350.0" layoutY="40.0" prefHeight="200" prefWidth="321.0">
             <columns>

@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="280.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mahin.RunMarketingCampaignsController">
+<AnchorPane prefHeight="280.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.RunMarketingCampaignsController">
         <children>
         <Label layoutX="138.0" layoutY="14.0" style="-fx-font-size:18px; -fx-font-weight:bold;" text="Marketing Campaigns Promotions" />
 

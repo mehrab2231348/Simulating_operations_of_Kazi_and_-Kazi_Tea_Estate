@@ -1,8 +1,8 @@
-module com.example.imulatingoperationsofkaziandkaziteaestate {
+module com.example.Simulatingoperationsofkaziandkaziteaestate {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.imulatingoperationsofkaziandkaziteaestate to javafx.fxml;
-    exports com.example.imulatingoperationsofkaziandkaziteaestate;
+    opens com.example.Simulatingoperationsofkaziandkaziteaestate to javafx.fxml;
+    exports com.example.Simulatingoperationsofkaziandkaziteaestate;
 }

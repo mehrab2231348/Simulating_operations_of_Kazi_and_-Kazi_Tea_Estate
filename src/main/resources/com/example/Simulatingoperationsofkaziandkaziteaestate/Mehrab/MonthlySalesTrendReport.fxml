@@ -14,8 +14,8 @@
 
         <ComboBox fx:id="monthComboBox" layoutX="73.0" layoutY="53.0" prefWidth="150.0" />
 
-        <Button layoutX="245.0" layoutY="53.0" onAction="#generateOnClicked" text="Generate Report" />
-        <Button layoutX="365.0" layoutY="53.0" onAction="#submitOnClicked" text="Submit to Manager" />
+        <Button layoutX="245.0" layoutY="53.0" onAction="#generateButtonOnClicked" text="Generate Report" />
+        <Button layoutX="365.0" layoutY="53.0" onAction="#submitButtonOnClicked" text="Submit to Manager" />
 
         <TableView fx:id="trendTableView" layoutX="90.0" layoutY="97.0" prefHeight="350" prefWidth="328.0">
             <columns>

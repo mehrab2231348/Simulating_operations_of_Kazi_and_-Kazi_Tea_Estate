@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane prefHeight="441.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imulatingoperationsofkaziandkaziteaestate.Mahin.MonitorDailyEstateActivitiesController">
+<AnchorPane prefHeight="441.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.MonitorDailyEstateActivitiesController">
     <children>
         <Label layoutX="170.0" prefHeight="27.0" prefWidth="304.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Daily Estate Operations Monitoring" />
 

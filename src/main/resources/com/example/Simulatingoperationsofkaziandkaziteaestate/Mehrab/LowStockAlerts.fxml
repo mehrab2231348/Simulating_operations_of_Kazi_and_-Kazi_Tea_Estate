@@ -14,7 +14,7 @@
         <Label layoutX="30.0" layoutY="65.0" text="Threshold:" />
         <TextField fx:id="thresholdTextField" layoutX="92.0" layoutY="61.0" />
 
-        <Button layoutX="109.0" layoutY="96.0" onAction="#setAlertOnClicked" prefHeight="25.0" prefWidth="102.0" text="Set Alert" />
+        <Button layoutX="109.0" layoutY="96.0" onAction="#setAlertButtonOnClicked" prefHeight="25.0" prefWidth="102.0" text="Set Alert" />
 
         <TableView fx:id="alertTable" layoutX="30.0" layoutY="135.0" prefHeight="180" prefWidth="259.0">
             <columns>
