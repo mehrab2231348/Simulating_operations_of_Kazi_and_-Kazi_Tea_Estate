@@ -1,5 +1,11 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
 public class ArchiveProductsController
 {
     @javafx.fxml.FXML

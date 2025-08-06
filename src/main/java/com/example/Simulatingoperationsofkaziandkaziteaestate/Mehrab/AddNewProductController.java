@@ -1,5 +1,8 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class AddNewProductController
 {
     @javafx.fxml.FXML
@@ -23,10 +26,6 @@ public class AddNewProductController
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
-
-    @Deprecated
-    public void addProductOnClicked(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

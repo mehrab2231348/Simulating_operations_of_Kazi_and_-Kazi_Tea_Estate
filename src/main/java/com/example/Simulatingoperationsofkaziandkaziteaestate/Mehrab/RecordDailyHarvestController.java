@@ -1,5 +1,8 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class RecordDailyHarvestController
 {
     @javafx.fxml.FXML

@@ -1,5 +1,10 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class MonthlySalesTrendReportController
 {
     @javafx.fxml.FXML
