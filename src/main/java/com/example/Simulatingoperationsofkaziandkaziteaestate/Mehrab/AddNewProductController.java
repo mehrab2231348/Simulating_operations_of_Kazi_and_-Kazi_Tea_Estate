@@ -30,5 +30,6 @@ public class AddNewProductController
 
     @javafx.fxml.FXML
     public void addProductButtonOnClicked(ActionEvent actionEvent) {
+
     }
 }
