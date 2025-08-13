@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.MonitorEstateOperator"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofkaziandkaziteaestate.Mahin.MonitorEstateOperatorController">
+    <children>
 
+        <Label layoutX="200.0" layoutY="14.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Daily Estate Operations Monitoring" />
+
+        <Label layoutX="20.0" layoutY="60.0" text="Zone:" />
+        <ComboBox fx:id="zoneComboBox" layoutX="120.0" layoutY="56.0" prefWidth="150.0" />
+
+        <Label layoutX="320.0" layoutY="60.0" text="Date:" />
+        <DatePicker fx:id="activityDatePicker" layoutX="370.0" layoutY="56.0" prefWidth="150.0" />
+
+        <Label layoutX="20.0" layoutY="100.0" text="Plucked (kg):" />
+        <TextField fx:id="pluckedField" layoutX="120.0" layoutY="96.0" prefWidth="150.0" />
+
+        <Label layoutX="320.0" layoutY="100.0" text="Absent Workers:" />
+        <TextField fx:id="absenteeField" layoutX="430.0" layoutY="96.0" prefWidth="90.0" />
+
+        <Label layoutX="20.0" layoutY="140.0" text="Rainfall (mm):" />
+        <TextField fx:id="rainfallField" layoutX="120.0" layoutY="136.0" prefWidth="150.0" />
+
+        <Label layoutX="320.0" layoutY="140.0" text="Remarks:" />
+        <TextArea fx:id="remarksArea" layoutX="370.0" layoutY="136.0" prefHeight="60.0" prefWidth="200.0" />
+
+        <Button fx:id="saveEntryBtn" layoutX="120.0" layoutY="210.0" text="Save Entry" />
+        <Button fx:id="viewUpdatesBtn" layoutX="220.0" layoutY="210.0" text="View Updates" />
+
+        <TableView fx:id="dailyLogsTable" layoutX="20.0" layoutY="250.0" prefHeight="170.0" prefWidth="660.0">
+            <columns>
+                <TableColumn fx:id="zoneCol" prefWidth="100.0" text="Zone" />
+                <TableColumn fx:id="dateCol" prefWidth="120.0" text="Date" />
+                <TableColumn fx:id="pluckedCol" prefWidth="100.0" text="Plucked (kg)" />
+                <TableColumn fx:id="absenteeCol" prefWidth="120.0" text="Absent Workers" />
+                <TableColumn fx:id="rainfallCol" prefWidth="100.0" text="Rainfall (mm)" />
+                <TableColumn fx:id="remarksCol" prefWidth="120.0" text="Remarks" />
+            </columns>
+        </TableView>
+
+    </children>
 </AnchorPane>
