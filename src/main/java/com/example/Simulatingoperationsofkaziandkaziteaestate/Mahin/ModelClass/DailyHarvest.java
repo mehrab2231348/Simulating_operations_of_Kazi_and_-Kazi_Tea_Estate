@@ -57,4 +57,15 @@ public class DailyHarvest {
     public void setDate(LocalDate date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "DailyHarvest{" +
+                "zone='" + zone + '\'' +
+                ", pluckerName='" + pluckerName + '\'' +
+                ", harvestKg=" + harvestKg +
+                ", leafQuality='" + leafQuality + '\'' +
+                ", date=" + date +
+                '}';
+    }
 }

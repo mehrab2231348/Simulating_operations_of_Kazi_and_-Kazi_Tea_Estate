@@ -45,5 +45,15 @@ public class CollectReviewFeedback {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
+    @Override
+    public String toString() {
+        return "CollectReviewFeedback{" +
+                "customer='" + customer + '\'' +
+                ", orderId='" + orderId + '\'' +
+                ", rating=" + rating +
+                ", comment='" + comment + '\'' +
+                '}';
+    }
 }
 

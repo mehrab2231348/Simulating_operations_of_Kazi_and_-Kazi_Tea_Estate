@@ -45,4 +45,14 @@ public class GenerateDailyFieldReport {
     public void setNote(String note) {
         this.note = note;
     }
+
+    @Override
+    public String toString() {
+        return "GenerateDailyFieldReport{" +
+                "zone='" + zone + '\'' +
+                ", pluckedKg=" + pluckedKg +
+                ", absentWorkers=" + absentWorkers +
+                ", note='" + note + '\'' +
+                '}';
+    }
 }

@@ -55,4 +55,15 @@ public class BudgetUtilization {
     public void setProposal(String proposal) {
         this.proposal = proposal;
     }
+
+    @Override
+    public String toString() {
+        return "BudgetUtilization{" +
+                "category='" + category + '\'' +
+                ", budgetAllocated=" + budgetAllocated +
+                ", spent=" + spent +
+                ", remaining=" + remaining +
+                ", proposal='" + proposal + '\'' +
+                '}';
+    }
 }

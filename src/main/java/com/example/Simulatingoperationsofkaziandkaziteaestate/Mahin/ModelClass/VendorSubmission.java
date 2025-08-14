@@ -47,5 +47,15 @@ public class VendorSubmission {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "VendorSubmission{" +
+                "vendorID='" + vendorID + '\'' +
+                ", productName='" + productName + '\'' +
+                ", submissionDate=" + submissionDate +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }
 

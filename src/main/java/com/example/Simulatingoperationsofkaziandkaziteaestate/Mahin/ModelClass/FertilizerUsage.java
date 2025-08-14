@@ -67,4 +67,16 @@ public class FertilizerUsage {
     public void setLastUpdated(LocalDate lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
+
+    @Override
+    public String toString() {
+        return "FertilizerUsage{" +
+                "zone='" + zone + '\'' +
+                ", fertilizerType='" + fertilizerType + '\'' +
+                ", amountUsed=" + amountUsed +
+                ", stock=" + stock +
+                ", status='" + status + '\'' +
+                ", lastUpdated=" + lastUpdated +
+                '}';
+    }
 }

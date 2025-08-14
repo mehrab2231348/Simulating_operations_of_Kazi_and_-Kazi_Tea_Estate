@@ -75,5 +75,18 @@ public class ManageProductListings {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "ManageProductListings{" +
+                "productId='" + productId + '\'' +
+                ", productImage='" + productImage + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", stockQty=" + stockQty +
+                ", status='" + status + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
 

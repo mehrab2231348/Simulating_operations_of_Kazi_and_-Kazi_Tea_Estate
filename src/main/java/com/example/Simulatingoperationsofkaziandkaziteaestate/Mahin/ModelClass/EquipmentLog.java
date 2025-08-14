@@ -57,4 +57,15 @@ public class EquipmentLog {
     public void setServiceDate(LocalDate serviceDate) {
         this.serviceDate = serviceDate;
     }
+
+    @Override
+    public String toString() {
+        return "EquipmentLog{" +
+                "equipmentName='" + equipmentName + '\'' +
+                ", lastUsed=" + lastUsed +
+                ", condition='" + condition + '\'' +
+                ", status='" + status + '\'' +
+                ", serviceDate=" + serviceDate +
+                '}';
+    }
 }

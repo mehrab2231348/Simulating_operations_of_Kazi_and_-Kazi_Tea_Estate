@@ -67,5 +67,17 @@ public class DailyEstateMonitoring {
     public void setDetails(String details) {
         this.details = details;
     }
+
+    @Override
+    public String toString() {
+        return "DailyEstateMonitoring{" +
+                "zone='" + zone + '\'' +
+                ", absentWorkers=" + absentWorkers +
+                ", totalPlucked=" + totalPlucked +
+                ", date=" + date +
+                ", rainfall=" + rainfall +
+                ", details='" + details + '\'' +
+                '}';
+    }
 }
 

@@ -57,4 +57,15 @@ public class MarketingCampaign {
     public void setContentDetails(String contentDetails) {
         this.contentDetails = contentDetails;
     }
+
+    @Override
+    public String toString() {
+        return "MarketingCampaign{" +
+                "campaignName='" + campaignName + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", mediaChannel='" + mediaChannel + '\'' +
+                ", contentDetails='" + contentDetails + '\'' +
+                '}';
+    }
 }

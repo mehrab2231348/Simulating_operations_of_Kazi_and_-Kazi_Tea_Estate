@@ -57,4 +57,15 @@ public class Order {
     public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderId='" + orderId + '\'' +
+                ", customer='" + customer + '\'' +
+                ", orderDate=" + orderDate +
+                ", status='" + status + '\'' +
+                ", totalAmount=" + totalAmount +
+                '}';
+    }
 }

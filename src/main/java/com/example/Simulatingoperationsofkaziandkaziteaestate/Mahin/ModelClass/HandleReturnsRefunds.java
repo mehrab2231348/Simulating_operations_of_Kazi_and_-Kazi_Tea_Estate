@@ -56,4 +56,15 @@ public class HandleReturnsRefunds {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "HandleReturnsRefunds{" +
+                "returnId='" + returnId + '\'' +
+                ", orderId='" + orderId + '\'' +
+                ", product='" + product + '\'' +
+                ", reason='" + reason + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }

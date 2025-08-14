@@ -55,4 +55,15 @@ public class AnalyzeSalesFunnel {
     public void setConversionRate(double conversionRate) {
         this.conversionRate = conversionRate;
     }
+
+    @Override
+    public String toString() {
+        return "AnalyzeSalesFunnel{" +
+                "funnelStage='" + funnelStage + '\'' +
+                ", visits=" + visits +
+                ", addsToCart=" + addsToCart +
+                ", checkouts=" + checkouts +
+                ", conversionRate=" + conversionRate +
+                '}';
+    }
 }

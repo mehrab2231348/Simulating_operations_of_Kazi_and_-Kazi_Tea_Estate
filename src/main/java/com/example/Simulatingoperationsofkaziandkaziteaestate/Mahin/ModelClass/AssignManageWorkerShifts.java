@@ -35,4 +35,13 @@ public class AssignManageWorkerShifts {
     public void setWorkerTask(String workerTask) {
         this.workerTask = workerTask;
     }
+
+    @Override
+    public String toString() {
+        return "AssignManageWorkerShifts{" +
+                "workerName='" + workerName + '\'' +
+                ", workingZone='" + workingZone + '\'' +
+                ", workerTask='" + workerTask + '\'' +
+                '}';
+    }
 }

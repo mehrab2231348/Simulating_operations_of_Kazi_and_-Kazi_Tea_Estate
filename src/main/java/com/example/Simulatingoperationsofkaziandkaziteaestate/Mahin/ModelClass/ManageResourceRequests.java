@@ -45,4 +45,14 @@ public class ManageResourceRequests {
     public void setReason(String reason) {
         this.reason = reason;
     }
+
+    @Override
+    public String toString() {
+        return "ManageResourceRequests{" +
+                "resourceType='" + resourceType + '\'' +
+                ", quantity=" + quantity +
+                ", targetZone='" + targetZone + '\'' +
+                ", reason='" + reason + '\'' +
+                '}';
+    }
 }

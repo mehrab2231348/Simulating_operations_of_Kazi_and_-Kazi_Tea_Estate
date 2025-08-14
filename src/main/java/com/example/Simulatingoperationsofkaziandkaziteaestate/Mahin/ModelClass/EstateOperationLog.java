@@ -67,5 +67,17 @@ public class EstateOperationLog {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+    @Override
+    public String toString() {
+        return "EstateOperationLog{" +
+                "zone='" + zone + '\'' +
+                ", date=" + date +
+                ", pluckedKg=" + pluckedKg +
+                ", absentWorkers=" + absentWorkers +
+                ", rainfallMm=" + rainfallMm +
+                ", remarks='" + remarks + '\'' +
+                '}';
+    }
 }
 

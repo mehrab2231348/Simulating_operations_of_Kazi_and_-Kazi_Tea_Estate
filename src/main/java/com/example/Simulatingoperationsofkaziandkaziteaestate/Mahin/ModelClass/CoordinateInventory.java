@@ -57,5 +57,16 @@ public class CoordinateInventory {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "CoordinateInventory{" +
+                "productId='" + productId + '\'' +
+                ", productName='" + productName + '\'' +
+                ", availableStock=" + availableStock +
+                ", lastSync=" + lastSync +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }
 
