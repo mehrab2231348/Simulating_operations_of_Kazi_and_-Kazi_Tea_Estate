@@ -1,5 +1,8 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import javafx.scene.control.*;
+import javafx.scene.shape.Line;
+
 public class ManageResourceRequestsController
 {
     @javafx.fxml.FXML

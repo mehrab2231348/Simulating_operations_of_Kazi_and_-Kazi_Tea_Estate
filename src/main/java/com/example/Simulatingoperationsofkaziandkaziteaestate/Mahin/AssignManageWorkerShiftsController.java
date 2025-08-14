@@ -1,5 +1,8 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import javafx.scene.control.*;
+import javafx.scene.shape.Line;
+
 public class AssignManageWorkerShiftsController
 {
     @javafx.fxml.FXML

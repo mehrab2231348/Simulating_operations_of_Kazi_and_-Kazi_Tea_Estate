@@ -1,5 +1,7 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import javafx.scene.control.*;
+
 public class MonitorFertilizerUsageController
 {
     @javafx.fxml.FXML
