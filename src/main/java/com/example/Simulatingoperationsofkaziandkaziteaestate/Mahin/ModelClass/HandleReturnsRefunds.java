@@ -8,7 +8,6 @@ public class HandleReturnsRefunds {
     private String reason;
     private String status;
 
-
     public HandleReturnsRefunds(String returnId, String orderId, String product, String reason, String status) {
         this.returnId = returnId;
         this.orderId = orderId;

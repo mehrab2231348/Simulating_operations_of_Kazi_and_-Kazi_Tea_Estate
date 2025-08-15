@@ -9,7 +9,7 @@ public class RunMarketingCampaignsController
     @javafx.fxml.FXML
     private TextArea contentArea;
     @javafx.fxml.FXML
-    private ComboBox channelCombo;
+    private ComboBox<String> channelCombo;
     @javafx.fxml.FXML
     private DatePicker startDatePicker;
     @javafx.fxml.FXML

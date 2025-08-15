@@ -1,32 +1,47 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.ModelClass.AssignManageWorkerShifts;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.shape.Line;
 
 public class AssignManageWorkerShiftsController
 {
-    @javafx.fxml.FXML
+    @FXML
     private Button assignBtn;
-    @javafx.fxml.FXML
-    private ComboBox zoneComboBox;
-    @javafx.fxml.FXML
-    private TableView WorkerShiftTable;
-    @javafx.fxml.FXML
+
+    @FXML
+    private ComboBox<String> zoneComboBox;
+
+    @FXML
+    private TableView<AssignManageWorkerShifts> WorkerShiftTable;
+
+    @FXML
     private Line line;
-    @javafx.fxml.FXML
+
+    @FXML
     private RadioButton morningBtn;
-    @javafx.fxml.FXML
+
+    @FXML
     private RadioButton eveningBtn;
-    @javafx.fxml.FXML
-    private ComboBox taskTypeCombo;
-    @javafx.fxml.FXML
-    private TableColumn WorkerTask;
-    @javafx.fxml.FXML
+
+    @FXML
+    private ComboBox<String> taskTypeCombo;
+
+    @FXML
+    private TableColumn<AssignManageWorkerShifts, String> WorkerTask;
+
+    @FXML
     private TextField workerName;
-    @javafx.fxml.FXML
-    private TableColumn WorkingZone;
-    @javafx.fxml.FXML
-    private TableColumn WorkerName;
+
+    @FXML
+    private TableColumn<AssignManageWorkerShifts, String> WorkingZone;
+
+    @FXML
+    private TableColumn<AssignManageWorkerShifts, String> WorkerName;
+
+    private ObservableList<AssignManageWorkerShifts> workerShiftData;
 
     @javafx.fxml.FXML
     public void initialize() {

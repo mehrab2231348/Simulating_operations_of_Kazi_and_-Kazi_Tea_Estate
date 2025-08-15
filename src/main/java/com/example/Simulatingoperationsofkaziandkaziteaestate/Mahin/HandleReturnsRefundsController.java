@@ -1,32 +1,47 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.ModelClass.HandleReturnsRefunds;
+import javafx.collections.ObservableList;
 import javafx.event.Event;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 public class HandleReturnsRefundsController
 {
-    @javafx.fxml.FXML
+    @FXML
     private Button UpdateBtn;
-    @javafx.fxml.FXML
-    private TableColumn statusCol;
-    @javafx.fxml.FXML
-    private TableColumn reasonCol;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<HandleReturnsRefunds, String> statusCol;
+
+    @FXML
+    private TableColumn<HandleReturnsRefunds, String> reasonCol;
+
+    @FXML
     private TextField OrderIDTextFeild;
-    @javafx.fxml.FXML
-    private ChoiceBox FutherProcessComboBox;
-    @javafx.fxml.FXML
-    private TableView returnsTable;
-    @javafx.fxml.FXML
+
+    @FXML
+    private ChoiceBox<String> FutherProcessComboBox;
+
+    @FXML
+    private TableView<HandleReturnsRefunds> returnsTable;
+
+    @FXML
     private RadioButton ApproveRdBtn;
-    @javafx.fxml.FXML
-    private TableColumn productCol;
-    @javafx.fxml.FXML
-    private TableColumn returnIdCol;
-    @javafx.fxml.FXML
-    private TableColumn orderIdCol;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<HandleReturnsRefunds, String> productCol;
+
+    @FXML
+    private TableColumn<HandleReturnsRefunds, String> returnIdCol;
+
+    @FXML
+    private TableColumn<HandleReturnsRefunds, String> orderIdCol;
+
+    @FXML
     private RadioButton RejectRdBtn;
+
+    private ObservableList<HandleReturnsRefunds> returnList;
 
     @javafx.fxml.FXML
     public void initialize() {

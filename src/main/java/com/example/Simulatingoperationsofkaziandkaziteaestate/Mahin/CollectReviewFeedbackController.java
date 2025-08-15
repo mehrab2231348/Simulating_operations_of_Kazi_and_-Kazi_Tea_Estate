@@ -1,24 +1,35 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.ModelClass.CollectReviewFeedback;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class CollectReviewFeedbackController
 {
-    @javafx.fxml.FXML
-    private TableColumn custNameCol;
-    @javafx.fxml.FXML
-    private TableColumn orderCol;
-    @javafx.fxml.FXML
-    private TableColumn commentCol;
-    @javafx.fxml.FXML
-    private TableColumn ratingCol;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<CollectReviewFeedback, String> custNameCol;
+
+    @FXML
+    private TableColumn<CollectReviewFeedback, String> orderCol;
+
+    @FXML
+    private TableColumn<CollectReviewFeedback, Integer> ratingCol;
+
+    @FXML
+    private TableColumn<CollectReviewFeedback, String> commentCol;
+
+    @FXML
     private Button viewUpdateBtn;
-    @javafx.fxml.FXML
-    private TableView feedbackTable;
+
+    @FXML
+    private TableView<CollectReviewFeedback> feedbackTable;
+
+    private ObservableList<CollectReviewFeedback> feedbackList;
 
     @javafx.fxml.FXML
     public void initialize() {
     }}
+

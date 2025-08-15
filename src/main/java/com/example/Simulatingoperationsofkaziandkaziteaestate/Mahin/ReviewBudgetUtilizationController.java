@@ -1,5 +1,6 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.ModelClass.BudgetUtilization;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -12,17 +13,17 @@ public class ReviewBudgetUtilizationController
     @javafx.fxml.FXML
     private Button submitBtn;
     @javafx.fxml.FXML
-    private TableColumn remainingCol;
+    private TableColumn<BudgetUtilization, Double> remainingCol;
     @javafx.fxml.FXML
-    private TableColumn categoryCol;
+    private TableColumn<BudgetUtilization, String> categoryCol;
     @javafx.fxml.FXML
-    private TableColumn allocatedCol;
+    private TableColumn<BudgetUtilization, Double> allocatedCol;
     @javafx.fxml.FXML
-    private TableColumn spentCol;
+    private TableColumn<BudgetUtilization, Double> spentCol;
     @javafx.fxml.FXML
-    private TableView budgetTable;
+    private TableView<BudgetUtilization> budgetTable;
     @javafx.fxml.FXML
-    private TableColumn remarksCol;
+    private TableColumn<BudgetUtilization, String> remarksCol;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -1,44 +1,49 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.ModelClass.ManageProductListings;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.shape.Line;
 
 public class ManageProductListingsController
 {
-    @javafx.fxml.FXML
-    private TableColumn stockCol;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<ManageProductListings, Integer> stockCol;
+    @FXML
     private Button imageBtn;
-    @javafx.fxml.FXML
-    private TableColumn ImageViewOnTable;
-    @javafx.fxml.FXML
-    private ComboBox statusCombo;
-    @javafx.fxml.FXML
-    private TableColumn DescriptionTable;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<ManageProductListings, String> ImageViewOnTable;
+    @FXML
+    private ComboBox<String> statusCombo;
+    @FXML
+    private TableColumn<ManageProductListings, String> DescriptionTable;
+    @FXML
     private TextField nameField;
-    @javafx.fxml.FXML
+    @FXML
     private TextField stockField;
-    @javafx.fxml.FXML
-    private TableView productsTable;
-    @javafx.fxml.FXML
-    private Line ProductListingManagementLine;
-    @javafx.fxml.FXML
-    private TableColumn prodIdCol;
-    @javafx.fxml.FXML
-    private TableColumn priceCol;
-    @javafx.fxml.FXML
+    @FXML
+    private TableView<ManageProductListings> productsTable;
+    @FXML
+    private javafx.scene.shape.Line ProductListingManagementLine;
+    @FXML
+    private TableColumn<ManageProductListings, String> prodIdCol;
+    @FXML
+    private TableColumn<ManageProductListings, Double> priceCol;
+    @FXML
     private TextArea descriptionArea;
-    @javafx.fxml.FXML
-    private TableColumn statusCol;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<ManageProductListings, String> statusCol;
+    @FXML
     private TextField priceField;
-    @javafx.fxml.FXML
-    private TableColumn nameCol;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<ManageProductListings, String> nameCol;
+    @FXML
     private Button saveProductBtn;
-    @javafx.fxml.FXML
-    private TextField nameField1;
+    @FXML
+    private TextField nameField1; // Product ID input
+
+    private ObservableList<ManageProductListings> productList;
 
     @javafx.fxml.FXML
     public void initialize() {

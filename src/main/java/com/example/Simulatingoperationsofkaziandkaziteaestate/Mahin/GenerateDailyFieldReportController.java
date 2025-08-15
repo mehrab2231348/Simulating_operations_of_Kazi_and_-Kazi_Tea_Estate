@@ -1,33 +1,49 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.ModelClass.GenerateDailyFieldReport;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 public class GenerateDailyFieldReportController
 {
-    @javafx.fxml.FXML
+    @FXML
     private TextField AbsentWorkerTextFeild;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextArea NotesArea;
-    @javafx.fxml.FXML
-    private TableColumn pluckedColumn;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<GenerateDailyFieldReport, Double> pluckedColumn;
+
+    @FXML
     private DatePicker reportDate;
-    @javafx.fxml.FXML
-    private TableColumn zoneColumn;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<GenerateDailyFieldReport, String> zoneColumn;
+
+    @FXML
     private TextField weightTextFeild;
-    @javafx.fxml.FXML
+
+    @FXML
     private Button GenerateBtn;
-    @javafx.fxml.FXML
-    private TableColumn NoteColumn;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<GenerateDailyFieldReport, String> NoteColumn;
+
+    @FXML
     private Button shareBtn;
-    @javafx.fxml.FXML
-    private TableColumn absentColumn;
-    @javafx.fxml.FXML
-    private ComboBox ZoneComboBox;
-    @javafx.fxml.FXML
-    private TableView zoneReportTable;
+
+    @FXML
+    private TableColumn<GenerateDailyFieldReport, Integer> absentColumn;
+
+    @FXML
+    private ComboBox<String> ZoneComboBox;
+
+    @FXML
+    private TableView<GenerateDailyFieldReport> zoneReportTable;
+
+    private ObservableList<GenerateDailyFieldReport> reportList;
 
     @javafx.fxml.FXML
     public void initialize() {

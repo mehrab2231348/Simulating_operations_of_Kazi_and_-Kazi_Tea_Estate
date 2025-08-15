@@ -1,35 +1,38 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mahin.ModelClass.FertilizerUsage;
 import javafx.scene.control.*;
+
+import java.time.LocalDate;
 
 public class MonitorFertilizerUsageController
 {
     @javafx.fxml.FXML
     private Button updateBtn;
     @javafx.fxml.FXML
-    private TableColumn zoneColumn;
+    private TableColumn<FertilizerUsage, String> zoneColumn;
     @javafx.fxml.FXML
     private DatePicker PrevioustUpdatedDate;
     @javafx.fxml.FXML
-    private TableColumn amountColumn;
+    private TableColumn<FertilizerUsage, Double> amountColumn;
     @javafx.fxml.FXML
     private TextField TotalAmount;
     @javafx.fxml.FXML
-    private TableColumn typeColumn;
+    private TableColumn<FertilizerUsage, String> typeColumn;
     @javafx.fxml.FXML
     private TextField TypeFertilizerTExtFeild;
     @javafx.fxml.FXML
-    private TableView fertilizerTable;
+    private TableView<FertilizerUsage> fertilizerTable;
     @javafx.fxml.FXML
-    private TableColumn lastUpdatedColumn;
+    private TableColumn<FertilizerUsage, LocalDate> lastUpdatedColumn;
     @javafx.fxml.FXML
-    private TableColumn StockList;
+    private TableColumn<FertilizerUsage, Double> StockList;
     @javafx.fxml.FXML
     private Button requestBtn;
     @javafx.fxml.FXML
-    private ComboBox ZoneComboBoxFertilizer;
+    private ComboBox<String> ZoneComboBoxFertilizer;
     @javafx.fxml.FXML
-    private TableColumn FertilizerStatusColumn;
+    private TableColumn<FertilizerUsage, String> FertilizerStatusColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
