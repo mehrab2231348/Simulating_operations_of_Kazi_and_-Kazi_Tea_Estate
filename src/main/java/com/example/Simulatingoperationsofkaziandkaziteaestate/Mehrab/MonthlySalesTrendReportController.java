@@ -1,24 +1,27 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.MonthlySalesTrend;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import java.time.LocalDate;
+
 public class MonthlySalesTrendReportController
 {
     @javafx.fxml.FXML
-    private TableColumn quantityColumn;
+    private TableColumn<MonthlySalesTrend,Integer> quantityColumn;
     @javafx.fxml.FXML
-    private ComboBox monthComboBox;
+    private ComboBox<LocalDate> monthComboBox;
     @javafx.fxml.FXML
-    private TableView trendTableView;
+    private TableView<MonthlySalesTrend> trendTableView;
     @javafx.fxml.FXML
-    private TableColumn dateColumn;
+    private TableColumn<MonthlySalesTrend,LocalDate> dateColumn;
     @javafx.fxml.FXML
-    private TableColumn productColumn;
+    private TableColumn<MonthlySalesTrend,String> productColumn;
     @javafx.fxml.FXML
-    private TableColumn revenueColumn;
+    private TableColumn<MonthlySalesTrend,String> revenueColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

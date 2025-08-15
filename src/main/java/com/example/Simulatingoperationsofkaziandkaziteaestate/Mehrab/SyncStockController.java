@@ -1,5 +1,6 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.SyncStock;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -9,19 +10,19 @@ import javafx.scene.control.TextField;
 public class SyncStockController
 {
     @javafx.fxml.FXML
-    private TableView syncTableView;
+    private TableView<SyncStock> syncTableView;
     @javafx.fxml.FXML
-    private TableColumn statusColumn;
+    private TableColumn<SyncStock,String> statusColumn;
     @javafx.fxml.FXML
-    private TableColumn ecomQtyColumn;
+    private TableColumn<SyncStock,Integer> ecomQtyColumn;
     @javafx.fxml.FXML
     private TextField searchTextField;
     @javafx.fxml.FXML
     private Label syncStatusLabel;
     @javafx.fxml.FXML
-    private TableColumn productColumn;
+    private TableColumn<SyncStock,String> productColumn;
     @javafx.fxml.FXML
-    private TableColumn localQtyColumn;
+    private TableColumn<SyncStock,String> localQtyColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

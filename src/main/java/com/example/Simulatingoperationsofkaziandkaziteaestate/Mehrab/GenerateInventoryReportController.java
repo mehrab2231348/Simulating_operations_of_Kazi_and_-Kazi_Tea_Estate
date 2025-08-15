@@ -1,5 +1,6 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.InventoryReport;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -8,15 +9,15 @@ import javafx.scene.control.TextField;
 public class GenerateInventoryReportController
 {
     @javafx.fxml.FXML
-    private TableColumn productColumn;
+    private TableColumn<InventoryReport,String> productColumn;
     @javafx.fxml.FXML
-    private TableColumn thresholdColumn;
+    private TableColumn<InventoryReport,String> thresholdColumn;
     @javafx.fxml.FXML
     private TextField thresholdTextField;
     @javafx.fxml.FXML
-    private TableColumn currentQtyColumn;
+    private TableColumn<InventoryReport,Integer> currentQtyColumn;
     @javafx.fxml.FXML
-    private TableView alertTable;
+    private TableView<InventoryReport> alertTable;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -30,9 +31,6 @@ public class GenerateInventoryReportController
     public void setAlertOnClicked(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void setAlertButtonOnClicked(ActionEvent actionEvent) {
-    }
 
     @Deprecated
     public void generateButtonReportOnClicked(ActionEvent actionEvent) {

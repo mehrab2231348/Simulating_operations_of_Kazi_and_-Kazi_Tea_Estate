@@ -15,7 +15,6 @@ public class Product {
         this.description = description;
     }
 
-
     public String getProductName() {
         return productName;
     }
@@ -55,7 +54,6 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
-
 
     @Override
     public String toString() {

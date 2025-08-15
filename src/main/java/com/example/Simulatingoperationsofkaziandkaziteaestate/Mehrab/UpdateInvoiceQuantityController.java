@@ -1,5 +1,6 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.InvoiceProduct;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -14,17 +15,17 @@ public class UpdateInvoiceQuantityController
     @javafx.fxml.FXML
     private TextField currentQuantityTextField;
     @javafx.fxml.FXML
-    private TableView invoiceTable;
+    private TableView<InvoiceProduct> invoiceTable;
     @javafx.fxml.FXML
     private TextField productNameTextField;
     @javafx.fxml.FXML
-    private TableColumn currentQtyColumn;
+    private TableColumn<InvoiceProduct,Integer> currentQtyColumn;
     @javafx.fxml.FXML
-    private TableColumn productNameColumn;
+    private TableColumn<InvoiceProduct,String> productNameColumn;
     @javafx.fxml.FXML
-    private TableColumn productIdColumn;
+    private TableColumn<InvoiceProduct,String> productIdColumn;
     @javafx.fxml.FXML
-    private TableColumn updateQtyColumn;
+    private TableColumn<InvoiceProduct,Integer> updateQtyColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

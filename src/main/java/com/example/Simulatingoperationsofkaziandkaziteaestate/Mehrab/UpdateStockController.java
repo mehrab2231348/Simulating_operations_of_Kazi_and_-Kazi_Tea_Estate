@@ -1,5 +1,6 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.Stock;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -8,17 +9,17 @@ import javafx.scene.control.TextField;
 public class UpdateStockController
 {
     @javafx.fxml.FXML
-    private TableColumn quantityColumn;
+    private TableColumn<Stock,Integer> quantityColumn;
     @javafx.fxml.FXML
     private TextField productIdTextField;
     @javafx.fxml.FXML
-    private TableColumn nameColumn;
+    private TableColumn<Stock,String> nameColumn;
     @javafx.fxml.FXML
     private TextField newQtyTextField;
     @javafx.fxml.FXML
-    private TableView stockTableView;
+    private TableView<Stock> stockTableView;
     @javafx.fxml.FXML
-    private TableColumn idColumn;
+    private TableColumn<Stock,Integer> idColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

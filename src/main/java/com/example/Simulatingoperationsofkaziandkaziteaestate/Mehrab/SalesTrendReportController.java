@@ -1,26 +1,27 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.SalesTrendReport;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 public class SalesTrendReportController
 {
     @javafx.fxml.FXML
-    private ComboBox categoryComboBox;
+    private ComboBox<String>categoryComboBox;
     @javafx.fxml.FXML
-    private TableColumn quantitySoldColumn;
+    private TableColumn<SalesTrendReport,Integer> quantitySoldColumn;
     @javafx.fxml.FXML
-    private TableView reportTableView;
+    private TableView<SalesTrendReport> reportTableView;
     @javafx.fxml.FXML
-    private TableColumn productNameColumn;
+    private TableColumn<SalesTrendReport,String> productNameColumn;
     @javafx.fxml.FXML
-    private TableColumn regionColumn;
+    private TableColumn<SalesTrendReport,String> regionColumn;
     @javafx.fxml.FXML
     private DatePicker monthDatePicker;
     @javafx.fxml.FXML
-    private TableColumn productIdColumn;
+    private TableColumn<SalesTrendReport,Integer> productIdColumn;
     @javafx.fxml.FXML
-    private TableColumn totalSalesColumn;
+    private TableColumn<SalesTrendReport,Integer> totalSalesColumn;
     @javafx.fxml.FXML
     private TextArea summaryTextArea;
 

@@ -1,33 +1,37 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.SalesReport;
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.SalesTrendReport;
 import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class SalesReportController
 {
     @javafx.fxml.FXML
-    private TableColumn quantityColumn;
+    private TableColumn<SalesReport,Integer> quantityColumn;
     @javafx.fxml.FXML
     private DatePicker endDatePicker;
     @javafx.fxml.FXML
     private DatePicker startDatePicker;
     @javafx.fxml.FXML
-    private TableColumn totalColumn;
+    private TableColumn<SalesReport,Integer> totalColumn;
     @javafx.fxml.FXML
-    private TableView salesTableView;
+    private TableView<SalesReport> salesTableView;
     @javafx.fxml.FXML
-    private TableColumn dateColumn;
+    private TableColumn<SalesReport, LocalDate> dateColumn;
     @javafx.fxml.FXML
     private TextField categoryTextField;
     @javafx.fxml.FXML
-    private TableColumn productColumn;
+    private TableColumn<SalesReport,String> productColumn;
     @javafx.fxml.FXML
-    private TableColumn categoryColumn;
+    private TableColumn<SalesReport,String> categoryColumn;
     @javafx.fxml.FXML
-    private TableColumn regionColumn;
+    private TableColumn<SalesReport,String> regionColumn;
     @javafx.fxml.FXML
     private TextField regionTextField;
 

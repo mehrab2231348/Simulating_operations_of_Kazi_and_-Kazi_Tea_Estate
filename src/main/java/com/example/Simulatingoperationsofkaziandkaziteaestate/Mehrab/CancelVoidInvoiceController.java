@@ -1,25 +1,28 @@
 package com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab;
 
+import com.example.Simulatingoperationsofkaziandkaziteaestate.Mehrab.ModalClass.InvoiceLog;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class CancelVoidInvoiceController
 {
     @javafx.fxml.FXML
-    private TableColumn reasonColumn;
+    private TableColumn<InvoiceLog,String> reasonColumn;
     @javafx.fxml.FXML
     private TextField invoiceIdTextField;
     @javafx.fxml.FXML
-    private TableColumn statusColumn;
+    private TableColumn<InvoiceLog,String> statusColumn;
     @javafx.fxml.FXML
-    private TableColumn invoiceColumn;
+    private TableColumn<InvoiceLog,Integer> invoiceColumn;
     @javafx.fxml.FXML
-    private TableView logTableView;
+    private TableView<InvoiceLog> logTableView;
     @javafx.fxml.FXML
-    private TableColumn dateColumn;
+    private TableColumn<InvoiceLog, LocalDate> dateColumn;
     @javafx.fxml.FXML
     private TextArea reasonTextField;
 
