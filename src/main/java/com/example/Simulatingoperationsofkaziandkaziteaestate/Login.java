@@ -15,7 +15,7 @@ public class Login
     @javafx.fxml.FXML
     private PasswordField passwordTF;
     @javafx.fxml.FXML
-    private ComboBox UsertypeCB;
+    private ComboBox<String> UsertypeCB;
 
     @javafx.fxml.FXML
     public void initialize() {
